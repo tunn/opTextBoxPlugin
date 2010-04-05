@@ -1,0 +1,55 @@
+div.textBox .count{
+  font-size: 24px;
+  color: #888888;
+}
+
+div.textBox form textarea{
+  width: 98%;
+  -moz-border-radius: 3px;
+  height: 50px; 
+  padding: 4px 2px;
+  overflow: hidden;
+}
+
+div.textBox form textarea:focus{
+  -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+  border-color: rgba(82, 168, 236, 0.75) !important;
+  outline: medium none;
+}
+
+div.textBox .twitter img{
+  margin-top: 3px;
+}
+
+div.textBox .submit{
+  float: right;
+  margin-top: 3px;
+}
+
+ol.textList{
+  margin-top: 40px;
+}
+
+ol.textList li.text{
+  border-bottom: 1px solid #888888;  
+}
+
+ol.textList li.text .memberImage{
+  padding: 2px;
+  position: absolute; 
+}
+
+ol.textList li.text .memberImage img{
+  width: 48px;
+  height: 48px; 
+}
+
+ol.textList li.text .body{
+  margin-left: 50px;
+  padding: 5px;
+}
+
+ol.textList li.text .info{
+  color: #888888;
+  padding: 5px;
+}

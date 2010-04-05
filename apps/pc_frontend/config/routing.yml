@@ -1,0 +1,19 @@
+text_box:
+  url:  /textBox
+  param:  { module: textBox, action: textBox }
+  
+update_text_box:
+  url:  /textBox/updateText
+  param:  { module: textBox, action: updateText }
+  
+delete_text_box:
+  url:  /textBox/deleteText
+  param:  { module: textBox, action: deleteText }
+  
+twitter_auth:
+  url:  /sfTwitterAuth/login
+  param:  { module: sfTwitterAuth, action: login }
+  
+twitter_auth_failed:
+  url:  /sfTwitterAuth/failed
+  param:  { module: sfTwitterAuth, action: failed }

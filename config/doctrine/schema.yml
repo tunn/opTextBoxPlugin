@@ -1,0 +1,18 @@
+options:
+  charset: utf8
+
+TextBox:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true, comment: "Serial number" }
+    member_id: { type: integer(4), notnull: true, comment: "Member id" }
+    content: { type: string(140), notnull: true, comment: "Activity body" }
+    type: { type: integer(1), notnull: true, default: 1, comment: "Public flag of activity" }
+    is_deleted: { type: boolean, notnull: true, default: 0 }
+  relations:
+    Member: { foreignAlias: Text, local: member_id, foreign: id, onDelete: cascade }
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: "Saves activities"
